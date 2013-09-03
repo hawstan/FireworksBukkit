@@ -1,0 +1,21 @@
+name: FireworksBukkit
+description: A bukkit server plugin for creating a simple firework show
+main: me.hawkeye.minecraft.bukkitplugins.fireworks.FireworksPlugin
+version: 0.1
+author: Stanley Hawkeye
+commands:
+    firework:
+        description: Spawns a firework
+        permission: fireworks.firework
+    fs:
+        description: Show commands
+        permission: fireworks.show
+        aliases: [fireworkshow]
+
+permissions:
+    fireworks.firework:
+        description: Allows you to spawn a firework
+        default: op
+    fireworks.show:
+        description: Show commands
+        default: op
